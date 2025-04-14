@@ -32,7 +32,8 @@ npm run dev
 ```
 ---
 
-##🔌 API REST
+## 🔌 API REST
+
 GET /api/devices : liste des appareils
 
 GET /api/devices/:id : détails d’un appareil
