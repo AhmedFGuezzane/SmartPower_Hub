@@ -18,7 +18,7 @@ SmartPower Hub est une application web moderne dédiée à la **gestion centrali
 
 - **Frontend** : React, TailwindCSS, React Router
 - **Backend** : Node.js, Express.js, Mongoose
-- **Base de données** : MongoDB (MongoDB Atlas ou local)
+- **Base de données** : MongoDB (MongoDB Atlas)
 - **Dev tools** : Vite, concurrently, MongoDB Compass
 
 ---
