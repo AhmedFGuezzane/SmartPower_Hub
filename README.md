@@ -29,7 +29,7 @@ SmartPower Hub est une application web moderne dédiée à la **gestion centrali
 
 ```bash
 npm run dev
-
+```
 ---
 
 ##🔌 API REST
