@@ -2,6 +2,8 @@
 
 SmartPower Hub est une application web moderne dédiée à la **gestion centralisée d'appareils électriques**. Elle permet d’ajouter, consulter, modifier et supprimer des appareils tout en visualisant leurs données de consommation énergétique.
 
+🇬🇧 Read in English: [README.md](./README.md)
+
 ---
 
 ## 🚀 Démo rapide
