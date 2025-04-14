@@ -2,6 +2,8 @@
 
 SmartPower Hub is a modern web application dedicated to the **centralized management of electrical devices**. It allows users to add, view, edit, and delete devices while visualizing their energy consumption data.
 
+🇫🇷 Lire en français : [README.fr.md](./README.fr.md)
+
 ---
 
 ## 🚀 Quick Overview
@@ -75,6 +77,7 @@ See the document docs/Rapport_Technique_SmartPower_Hub.docx for more details abo
 ## 👤 Author
 
 Ahmed-Fateh Guezzane
+
 Project completed as part of course 420-A17-BB
 
 ---
