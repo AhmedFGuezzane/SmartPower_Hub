@@ -16,7 +16,16 @@ SmartPower Hub est une application web moderne dédiée à la **gestion centrali
 
 ## 📁 Structure du projet
 
-SmartPower-Hub/ ├── client/ # Frontend React + TailwindCSS ├── server/ # Backend Node.js + Express + MongoDB ├── docs/ # Documentation du projet │ └── Rapport_Technique_SmartPower_Hub.docx ├── README.md ├── package.json # Contient le script de démarrage global └── .gitignore
+SmartPower-Hub/ 
+├── client
+  / # Frontend React + TailwindCSS 
+├── server
+  / # Backend Node.js + Express + MongoDB 
+├── docs/ # Documentation du projet 
+  │ └── Rapport_Technique_SmartPower_Hub.docx 
+  ├── README.md 
+├── package.json # Contient le script de démarrage global 
+└── .gitignore
 
 yaml
 Copy
@@ -39,7 +48,8 @@ Edit
 
 ```bash
 npm run dev
-Ce script démarre à la fois le client et le serveur grâce à concurrently.
+
+---
 
 ##🔌 API REST
 GET /api/devices : liste des appareils
