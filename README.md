@@ -41,7 +41,7 @@ Edit
 npm run dev
 Ce script démarre à la fois le client et le serveur grâce à concurrently.
 
-🔌 API REST
+##🔌 API REST
 GET /api/devices : liste des appareils
 
 GET /api/devices/:id : détails d’un appareil
@@ -52,7 +52,7 @@ PUT /api/devices/:id : modification
 
 DELETE /api/devices/:id : suppression
 
-📄 Rapport technique
+##📄 Rapport technique
 Consulte le document docs/Rapport_Technique_SmartPower_Hub.docx pour plus de détails sur :
 
 L’architecture Express.js
@@ -63,7 +63,7 @@ Les composants React et leurs rôles
 
 Les suggestions d’amélioration future
 
-💡 À venir
+##💡 À venir
 Authentification JWT
 
 Dashboard graphique
@@ -72,8 +72,8 @@ Export des données (CSV, PDF)
 
 Interface admin avec filtres avancés
 
-👤 Auteur
+##👤 Auteur
 Ahmed-Fateh Guezzane
 Projet réalisé dans le cadre du cours 420-A17-BB
 
-📷 Aperçu (à ajouter)
+##📷 Aperçu (à ajouter)
