@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import DeviceList from "./components/DeviceList";
-import { DeviceCreate } from "./components/DeviceCreate";
-import { DeviceUpdate } from "./components/DeviceUpdate";
 import Sidebar from "./components/Sidebar";
-import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
+import DeviceList from "./components/Device/DeviceList";
+import { DeviceCreate } from "./components/Device/DeviceCreate";
+import { DeviceUpdate } from "./components/Device/DeviceUpdate";
 
 function AppWrapper() {
   return (
@@ -16,28 +15,31 @@ function AppWrapper() {
 }
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const location = useLocation();
-
-  const showNavigation = location.pathname === "/devices";
+  const [message, setMessage] = useState("");
 
   return (
     <div className="flex w-full h-screen bg-neutral-200 dark:bg-neutral-800">
-      <Sidebar resetSearch={() => setSearchTerm("")} />
+      <Sidebar setMessage={setMessage} />
 
       <div className="flex flex-col flex-1 ml-20 overflow-hidden">
-        {showNavigation && (
-          <NavigationBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+
+        {/* ✅ Global message */}
+        {message && (
+          <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-green-100 border border-green-400 text-green-800 px-6 py-3 rounded-xl shadow-md z-[9999]">
+            {message}
+            <button
+              onClick={() => setMessage("")}
+              className="ml-4 text-green-700 hover:text-green-900"
+            >
+              ✕
+            </button>
+          </div>
         )}
 
-        <main
-          className={`flex flex-1 justify-center items-center overflow-auto ${
-            showNavigation ? "mt-20" : ""
-          }`}
-        >
+        <main className="flex flex-1 justify-center items-center overflow-auto">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/devices" element={<DeviceList searchTerm={searchTerm} />} />
+            <Route path="/devices" element={<DeviceList />} />
             <Route path="/deviceCreate" element={<DeviceCreate />} />
             <Route path="/deviceUpdate/:id" element={<DeviceUpdate />} />
           </Routes>
@@ -46,5 +48,4 @@ function App() {
     </div>
   );
 }
-
 export default AppWrapper;

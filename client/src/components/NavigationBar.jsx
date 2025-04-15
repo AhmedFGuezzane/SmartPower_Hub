@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 
 const NavigationBar = ({ searchTerm, setSearchTerm }) => {
     return (
-      <div className="fixed z-50 w-full border-0 h-20 px-6 flex items-center justify-center text-white ">
+      <div className="fixed top-0 left-20 right-0 z-50 h-20 px-6 flex items-center justify-center text-white">
         <div className="relative w-full max-w-2xl">
           <input
             type="text"

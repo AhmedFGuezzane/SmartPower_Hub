@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors');
 const devicesRoutes = require('./routes/devices');
+const authRoutes = require("./routes/auth");
 const app = express();
 
 // Ici on definit le port comment etant celui dans le fichier .env
@@ -28,6 +29,7 @@ mongoose
 app.use(cors());
 app.use(express.json()); // Ce qui nous permet de communiquer entre le server qui est sur le port 3000 et le client qui est sur le port 5173
 app.use('/api/devices', devicesRoutes);
+app.use("/api/auth", authRoutes);
 
 // Ici, on lance le server 
 app.listen(PORT, () => {
